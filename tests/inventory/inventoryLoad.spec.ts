@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
-import { LoginPage } from '../../pages/loginPage';
-import { InventoryPage } from '../../pages/inventoryPage';
-import { testData } from '../../utils/testData';
+import { LoginPage } from '../../pages_view_logic/loginPage';
+import { InventoryPage } from '../../pages_view_logic/inventoryPage';
+import { testData } from '../../dynamic_source/testData';
 
 test('Verify Inventory Page loads after login', async ({ page }) => {
     const loginPage = new LoginPage(page);
